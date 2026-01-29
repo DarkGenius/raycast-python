@@ -1,0 +1,50 @@
+{
+  "name": "raycast-python",
+  "title": "Python Runner",
+  "description": "Run Python code snippets directly from Raycast",
+  "icon": "icon.png",
+  "author": "rbarlos",
+  "categories": ["Developer Tools"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Run Python",
+      "description": "Execute Python code and see the output",
+      "mode": "view"
+    },
+    {
+      "name": "history",
+      "title": "Python History",
+      "description": "View and re-run previously executed Python snippets",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "pythonPath",
+      "title": "Python Path",
+      "description": "Path to the Python interpreter",
+      "type": "textfield",
+      "default": "python3",
+      "required": false
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.93.2",
+    "@raycast/utils": "^1.19.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "22.13.1",
+    "@types/react": "19.0.8",
+    "eslint": "^8.57.1",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
